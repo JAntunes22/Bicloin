@@ -1,0 +1,158 @@
+help
+info istt
+balance
+top-up 12
+tag 38 -9.3023 p000
+move 38.7377 -9.1544
+at
+scan 3
+info gulb
+bike-up gulb
+bike-down gulb
+ping
+sys_status
+balance
+tag 38.700 -9.3023 p001
+move p000
+scan 4
+info cate
+bike-up cate
+info cate
+move 38.7074 -9.1363
+info pcrm
+bike-down prcm
+info pcrm
+balance
+tag 38.6866 -9.3123 psta
+tag 38.7098 -9.1385 pcat
+tag 38.7061 -9.1440 pcai
+tag 38.6866 -9.2063 psta
+tag 38.6971 -9.2063 pjer
+tag 38.7074 -9.1363 pprc
+tag 38.7373 -9.3022 pist
+tag 38.74 -9.3 ptoa
+tag 38.7368 -9.1365 pisa
+tag 38.7634 -9.0951 poce
+tag 38.7377 -9.1544 pgul
+move pcai
+balance
+info cais
+bike-up cais
+bike-down cais
+info cais
+info ista
+move pgul
+info gulb
+bike-up gulb
+info gulb
+move poce
+scan 5
+move pist
+scan 5
+move psta
+bike-down ista
+balance
+move pjer
+info jero
+bike-up jero
+move pisa
+info ista
+bike-down ista
+info stao
+move poce
+bike-up ocea
+move poce
+move pist
+scan 3
+move pist
+info istt
+bike-down istt
+balance
+move pcai
+scan 5
+info cais
+bike-up cais
+move pprc
+bike-down prcm
+info pist
+move poce
+at
+bike-up ocea
+move poce
+move pist
+scan 1
+move psta
+info stao
+bike-down stao
+move pist
+scan 5
+bike-down istt
+info istt
+move pcai
+bike-up cate
+move pcat
+scan 5
+info cate
+bike-down cate
+balance
+top-up 3
+move pcat
+bike-up cate
+move ptoa
+move p001
+scan 3
+move psta
+info stao
+bike-down stao
+move pprc
+bike-down prcm
+bike-up prcm
+move pcat
+bike-down cate
+ping
+balance
+top-up 5
+move pjer
+tag 38.737 -9.154 pgul
+bike-up jero
+move ptoa
+at
+move p001
+scan 1
+move pisa
+info ista
+bike-down ista
+info ocea
+move poce
+info ocea
+bike-up ocea
+move poce
+move 38.7373 -9.3023
+scan 3
+balance
+move pist
+bike-down istt
+move pcai
+bike-up cais
+move pprc
+bike-down prcm
+info jero
+move poce
+bike-up ocea
+move poce
+move pist
+scan 3
+move pgul
+info gulb
+bike-down gulb
+move pisa
+bike-down ista
+move pjer
+bike-up jero
+move pjer
+bike-down jero
+balance
+top-up 3
+move pcat
+sys_status
+help

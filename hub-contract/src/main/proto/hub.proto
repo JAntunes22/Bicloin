@@ -1,0 +1,122 @@
+//
+// Protocol buffers definition
+//
+syntax = "proto3";
+package pt.tecnico.bicloin.hub.grpc;
+
+message CtrlPingRequest {
+  string input = 1;
+}
+
+message CtrlPingResponse {
+	string output = 1;
+}
+
+message PingRequest {
+}
+
+message PingResponse {
+	string output = 1;
+}
+
+message ResetUserRequest {
+  string id = 1;
+}
+
+message ResetUserResponse {
+}
+
+message ResetStationRequest {
+  string id = 1;
+}
+
+message ResetStationResponse {
+}
+
+message BalanceRequest {
+  string name = 1;
+}
+
+message BalanceResponse {
+  int32 balance = 1;
+}
+
+message TopUpRequest {
+	string user_name = 1;
+	int32 amount = 2;
+	string phone_number = 3;
+}
+
+message TopUpResponse {
+  int32 balance = 1;
+}
+
+message InfoStationRequest {
+	string station_id = 1;
+}
+
+message InfoStationResponse {
+	string name = 1;
+	float latitude = 2;
+  float longitude = 3;
+	int32 capacity = 4;
+	int32 reward = 5;
+	int32 available_bikes = 6;
+	int32 stat_withdrawals = 7;
+	int32 stat_deposit = 8;
+}
+
+message LocateStationRequest {
+  float latitude = 1;
+  float longitude = 2;
+  int32 k = 3;
+}
+
+message LocateStationResponse {
+  repeated string station_id = 1;
+}
+
+message BikeUpRequest {
+  string name = 1;
+  float latitude = 2;
+  float longitude = 3;
+  string station_id = 4;
+}
+
+message BikeUpResponse {
+}
+
+message BikeDownRequest {
+  string name = 1;
+  float latitude = 2;
+  float longitude = 3;
+  string station_id = 4;
+}
+
+message BikeDownResponse {
+}
+
+message SysStatusRequest {
+}
+
+message SysStatusResponse {
+	message Status {
+		string path = 1;
+		bool up = 2;
+	}
+  repeated Status output = 1;
+}
+
+service HubService {
+  rpc ctrl_ping(CtrlPingRequest) returns (CtrlPingResponse);
+  rpc ping(PingRequest) returns (PingResponse);
+  rpc reset_user(ResetUserRequest) returns (ResetUserResponse);
+  rpc reset_station(ResetStationRequest) returns (ResetStationResponse);
+  rpc balance(BalanceRequest) returns (BalanceResponse);
+  rpc top_up(TopUpRequest) returns (TopUpResponse);
+  rpc info_station(InfoStationRequest) returns (InfoStationResponse);
+  rpc locate_station(LocateStationRequest) returns (LocateStationResponse);
+  rpc bike_up(BikeUpRequest) returns (BikeUpResponse);
+  rpc bike_down(BikeDownRequest) returns (BikeDownResponse);
+  rpc sys_status(SysStatusRequest) returns (SysStatusResponse);
+}
